@@ -109,3 +109,5 @@ EMAIL_PASS=your_email_app_password
 ## Project Flow
 
 User uploads CSV → Backend parses data → AI generates summary → Email sent to recipient.
+
+CI/CD can be extended using GitHub Actions to validate builds on pull requests.
