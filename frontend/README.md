@@ -1,16 +1,111 @@
-# React + Vite
+# Sales Insight Automator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+Sales Insight Automator is a full-stack AI-powered tool that allows teams to upload sales CSV/Excel data and automatically generate a professional AI summary which is sent to a specified email.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The application includes:
 
-## React Compiler
+* React SPA frontend
+* Node.js backend API
+* AI integration (Gemini)
+* Email delivery service
+* Docker containerization
+* Swagger API documentation
+* Cloud deployment
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Live Links
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Frontend
+https://sales-insight-automator.vercel.app
+
+Backend API
+https://sales-insight-automator-zi9z.onrender.com
+
+---
+
+## Features
+
+* Upload CSV sales data
+* AI-generated executive summary
+* Email delivery of the report
+* Swagger API testing interface
+* Docker containerized environment
+
+---
+
+## Tech Stack
+
+Frontend
+React (Vite)
+
+Backend
+Node.js + Express
+
+AI Engine
+Google Gemini API
+
+Deployment
+Vercel (Frontend)
+Render (Backend)
+
+Containerization
+Docker + docker-compose
+
+---
+
+## Running Locally
+
+Clone repository
+
+```
+git clone https://github.com/tbhsarthak/sales-insight-automator
+cd sales-insight-automator
+```
+
+Start services
+
+```
+docker-compose up --build
+```
+
+Backend will run on:
+
+```
+http://localhost:5000
+```
+
+Frontend will run on:
+
+```
+http://localhost:5173
+```
+
+---
+
+## Environment Variables
+
+Create `.env` file in `backend` folder:
+
+```
+GEMINI_API_KEY=your_api_key
+EMAIL_USER=your_email
+EMAIL_PASS=your_email_app_password
+```
+
+---
+
+## Security Measures
+
+* File upload validation
+* Input validation for email
+* Environment variables for secrets
+* CORS enabled only for frontend access
+
+---
+
+## Project Flow
+
+User uploads CSV → Backend parses data → AI generates summary → Email sent to recipient.
