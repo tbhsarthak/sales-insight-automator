@@ -90,9 +90,9 @@ http://localhost:5173
 Create `.env` file in `backend` folder:
 
 ```
-GEMINI_API_KEY=your_api_key
-EMAIL_USER=your_email
-EMAIL_PASS=your_email_app_password
+GEMINI_API_KEY=
+EMAIL_USER=
+EMAIL_PASS=
 ```
 
 ---
