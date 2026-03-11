@@ -16,7 +16,7 @@ function App() {
     formData.append("email", email);
 
     try {
-      const res = await fetch("http://localhost:5000/upload", {
+      const res = await fetch("https://sales-insight-automator-zi9z.onrender.com/upload", {
         method: "POST",
         body: formData,
       });
